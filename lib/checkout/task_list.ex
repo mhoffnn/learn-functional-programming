@@ -1,7 +1,7 @@
-defmodule TaskList do
+defmodule Checkout.List do
     import File, only: [write: 3, read: 1]
 
-    @file_name "task_list.md"
+    @file_name "checkout_list.md"
 
     def add(task_name) do
         task = "- [ ] " <> task_name <> "\n"
